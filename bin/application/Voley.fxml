@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="758.0" prefWidth="1258.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+  <tabs>
+    <Tab text="              search              ">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="529.0" layoutY="24.0" text="BANNER">
+                     <font>
+                        <Font name="System Italic" size="53.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="554.0" layoutX="647.0" layoutY="128.0" stroke="BLACK" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="591.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="153.0" layoutX="34.0" layoutY="128.0" stroke="BLACK" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="585.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="148.0" layoutX="34.0" layoutY="329.0" stroke="BLACK" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="585.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="152.0" layoutX="31.0" layoutY="530.0" stroke="BLACK" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="591.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="52.0" layoutX="50.0" layoutY="103.0" stroke="BLACK" strokeType="INSIDE" width="222.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="52.0" layoutX="50.0" layoutY="504.0" stroke="BLACK" strokeType="INSIDE" width="265.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="52.0" layoutX="50.0" layoutY="303.0" stroke="BLACK" strokeType="INSIDE" width="254.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="52.0" layoutX="668.0" layoutY="103.0" stroke="BLACK" strokeType="INSIDE" width="222.0" />
+                  <Label layoutX="85.0" layoutY="111.0" text="Cargar Datos" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="70.0" layoutY="311.0" text="Buscar Espectador" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="69.0" layoutY="512.0" text="Buscar Participante" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="722.0" layoutY="111.0" text="Ver Datos" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtCargarDatos" layoutX="50.0" layoutY="192.0" prefHeight="25.0" prefWidth="242.0" />
+                  <Button fx:id="btnExplorar" layoutX="320.0" layoutY="183.0" mnemonicParsing="false" onAction="#explorarDatos" prefHeight="44.0" prefWidth="119.0" text="Explorar" />
+                  <Button fx:id="btnCargar" layoutX="474.0" layoutY="182.0" mnemonicParsing="false" onAction="#cargarDatos" prefHeight="46.0" prefWidth="110.0" text="Cargar" />
+                  <Label fx:id="lblCargarDatos" layoutX="50.0" layoutY="248.0" text="Para realizar busquedas se deben de cargar los datos de un archivo csv" />
+                  <Label layoutX="50.0" layoutY="397.0" text="ID: " />
+                  <TextField fx:id="txtBuscEspectador" layoutX="70.0" layoutY="393.0" prefHeight="25.0" prefWidth="223.0" />
+                  <Button fx:id="btnBuscEspectador" layoutX="328.0" layoutY="382.0" mnemonicParsing="false" onAction="#buscarEspectador" prefHeight="47.0" prefWidth="100.0" text="Buscar" />
+                  <Label fx:id="lblTiempoEsp" layoutX="479.0" layoutY="395.0" text="Tiempo : " />
+                  <Label fx:id="lblBuscarEspectador" layoutX="50.0" layoutY="446.0" text="Buscar espectador en los datos" />
+                  <Label layoutX="45.0" layoutY="596.0" text="ID: " />
+                  <TextField fx:id="txtBuscParticipante" layoutX="65.0" layoutY="592.0" prefHeight="25.0" prefWidth="223.0" />
+                  <Button fx:id="btnBuscParticipante" layoutX="323.0" layoutY="581.0" mnemonicParsing="false" onAction="#buscarParticipante" prefHeight="47.0" prefWidth="100.0" text="Buscar" />
+                  <Label fx:id="lblTiempoPart" layoutX="474.0" layoutY="594.0" text="Tiempo : " />
+                  <Label fx:id="lblBuscarParticipante" layoutX="45.0" layoutY="645.0" text="Buscar espectador en los datos" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ebeef2" height="200.0" layoutX="679.0" layoutY="265.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                  <ImageView fx:id="Avatar" fitHeight="200.0" fitWidth="200.0" layoutX="680.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="929.0" layoutY="229.0" text="ID: " />
+                  <Label layoutX="929.0" layoutY="274.0" text="Nombre: " />
+                  <Label layoutX="929.0" layoutY="327.0" text="Apellido: " />
+                  <Label layoutX="929.0" layoutY="372.0" text="Email: " />
+                  <Label layoutX="929.0" layoutY="421.0" text="Genero: " />
+                  <Label layoutX="929.0" layoutY="468.0" text="Pais: " />
+                  <Label layoutX="929.0" layoutY="518.0" text="Nacimiento: " />
+                  <TextField fx:id="txtId" layoutX="1003.0" layoutY="225.0" prefHeight="25.0" prefWidth="225.0" />
+                  <TextField fx:id="txtLastName" layoutX="1003.0" layoutY="323.0" prefHeight="25.0" prefWidth="225.0" />
+                  <TextField fx:id="txtEmail" layoutX="1003.0" layoutY="370.0" prefHeight="25.0" prefWidth="225.0" />
+                  <TextField fx:id="txtGender" layoutX="1003.0" layoutY="417.0" prefHeight="25.0" prefWidth="225.0" />
+                  <TextField fx:id="txtCountry" layoutX="1003.0" layoutY="464.0" prefHeight="25.0" prefWidth="225.0" />
+                  <TextField fx:id="txtBirthday" layoutX="1003.0" layoutY="514.0" prefHeight="25.0" prefWidth="225.0" />
+                  <TextField fx:id="txtName" layoutX="1003.0" layoutY="272.0" prefHeight="25.0" prefWidth="225.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="            draw            ">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="512.0" layoutX="25.0" layoutY="39.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="1214.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="121.0" layoutX="25.0" layoutY="579.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="1214.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="41.0" layoutX="46.0" layoutY="19.0" stroke="BLACK" strokeType="INSIDE" width="233.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="41.0" layoutX="46.0" layoutY="559.0" stroke="BLACK" strokeType="INSIDE" width="191.0" />
+                  <Label layoutX="56.0" layoutY="20.0" text="Pintar estructura" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="78.0" layoutY="560.0" text="Opciones" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnDibujarParticipantes" layoutX="343.0" layoutY="607.0" mnemonicParsing="false" onAction="#dibujarParticipantes" prefHeight="65.0" prefWidth="212.0" text="Participantes">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnDibujarEspectadores" layoutX="765.0" layoutY="607.0" mnemonicParsing="false" onAction="#dibujarEspectadores" prefHeight="65.0" prefWidth="212.0" text="Espectadores">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
