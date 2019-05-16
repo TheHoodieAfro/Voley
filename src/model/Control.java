@@ -23,6 +23,7 @@ public class Control {
 	//Constructors
 	public Control() {
 		raiz = null;
+		first = null;
 	}
 	
 	//Getters and Setters

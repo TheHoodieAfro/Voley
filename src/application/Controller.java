@@ -80,15 +80,9 @@ public class Controller {
 			txtGender.setText(s[4]);
 			txtCountry.setText(s[5]);
 			txtBirthday.setText(s[7]);
-			/*
-			try {
-				FileInputStream inputstream = new FileInputStream(s[6]);
-				Image avatar = new Image(inputstream);
-				Avatar.setImage(avatar);
-			} catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} */
+			
+			Image avatar = new Image(s[6]);
+			Avatar.setImage(avatar);
 			
 			lblBuscarEspectador.setText("espectador encontrado");
 			
@@ -124,15 +118,9 @@ public class Controller {
 			txtGender.setText(s[4]);
 			txtCountry.setText(s[5]);
 			txtBirthday.setText(s[7]);
-			/*
-			try {
-				FileInputStream inputstream = new FileInputStream(s[6]);
-				Image avatar = new Image(inputstream);
-				Avatar.setImage(avatar);
-			} catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} */
+			
+			Image avatar = new Image(s[6]);
+			Avatar.setImage(avatar);
 			
 			lblBuscarParticipante.setText("participante encontrado");
 			

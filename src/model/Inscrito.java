@@ -30,6 +30,9 @@ public class Inscrito {
 		this.photo = photo;
 		this.birthday = birthday;
 		
+		r = null;
+		l = null;
+		
 	}
 	
 	//Getters and Setters
