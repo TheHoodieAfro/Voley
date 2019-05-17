@@ -145,7 +145,7 @@ public class Participante {
 	}
 	
 	public String toString() {
-		return id;
+		return id + " = ["+ name +" "+ lastName +", "+ email +", "+ gender + ", "+ country + ", "+ birthday +"]";
 	}
 	
 }

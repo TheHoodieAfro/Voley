@@ -119,17 +119,19 @@ public class Inscrito {
 	//Methods
 	public void insert(Inscrito x) {
 		
-		if(this.id.compareTo(x.getId()) > 0) {
-			if(l == null) {
-				l = x;
-			}else {
-				l.insert(x);
-			}
-		}else if(this.id.compareTo(x.getId()) < 0) {
-			if(r == null) {
-				r = x;
-			}else {
-				r.insert(x);
+		if(x!=null) {
+			if(this.id.compareTo(x.getId()) > 0) {
+				if(l == null) {
+					l = x;
+				}else {
+					l.insert(x);
+				}
+			}else if(this.id.compareTo(x.getId()) < 0) {
+				if(r == null) {
+					r = x;
+				}else {
+					r.insert(x);
+				}
 			}
 		}
 		

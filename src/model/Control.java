@@ -27,6 +27,13 @@ public class Control {
 	}
 	
 	//Getters and Setters
+	public Inscrito getRaiz() {
+		return raiz;
+	}
+	
+	public Participante getFirst() {
+		return first;
+	}
 	
 	//Methods
 	public String explorarDatos() {
