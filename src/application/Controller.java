@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileSystemView;
 
 import javafx.event.ActionEvent;
@@ -15,6 +16,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import model.Control;
 
 public class Controller {
@@ -45,6 +47,9 @@ public class Controller {
 	@FXML TextField txtGender;
 	@FXML TextField txtCountry;
 	@FXML TextField txtBirthday;
+	
+	//dibujar
+	@FXML AnchorPane pain;
 	
 	//Constructors
 	
@@ -135,7 +140,19 @@ public class Controller {
 	
 	public void dibujarParticipantes(ActionEvent event) {
 		
+		String pais = JOptionPane.showInputDialog("Elija el pais a conocer");
 		
+		String[] s = cont.traerParticipantes(pais);
+		
+		int x = 40;
+		for(int i=0; i<s.length; i++) {
+			Image im = new Image(s[i]);
+			ImageView m = new ImageView(im);
+			m.setX(x);
+			m.setY(259);
+			x += 101;
+			pain.getChildren().add(m);
+		}
 		
 	}
 	

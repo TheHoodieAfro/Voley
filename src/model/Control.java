@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.swing.JFileChooser;
 
@@ -121,7 +122,6 @@ public class Control {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
 	}
 	
 	public String[] buscarEspectador(String b) {
@@ -170,9 +170,25 @@ public class Control {
 		
 	}
 	
-	public void dibujarParticipantes() {
+	public String[] traerParticipantes(String pais) {
 		
+		Participante x = first;
+		ArrayList<String> d = new ArrayList<String>();
 		
+		while(x != null) {
+			if(x.getCountry().equalsIgnoreCase(pais)) {
+				d.add(x.getPhoto());
+			}
+			x = x.getNext();
+		}
+		
+		String[] s = new String[d.size()];
+		
+		for(int i=0; i<s.length; i++) {
+			s[i] = d.get(i);
+		}
+		
+		return s;
 		
 	}
 	
